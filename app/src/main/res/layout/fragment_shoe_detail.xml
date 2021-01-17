@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable
@@ -12,6 +11,13 @@
             name="shoesViewModel"
             type="com.udacity.shoestore.models.ShoesViewModel" />
     </data>
+
+    <!--
+    If I used Linear Layout in this layout, I would have to create horizontal
+    oriented linear layout each textview and edittext groups.
+    There would be a complex hierarchy.Constraint Layout is the concept provides simplifies
+    design and flattens hierarchy. Each view is defined by associations to other elements in the layout.
+    -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
